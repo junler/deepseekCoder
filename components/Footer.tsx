@@ -7,11 +7,11 @@ export default function Footer() {
         <div className="font-medium">
           Built with{" "}
           <a
-            href="https://ai.google.dev/gemini-api/docs"
+            href="https://api-docs.deepseek.com/"
             className="font-semibold text-blue-600 underline-offset-4 transition hover:text-gray-700 hover:underline"
             target="_blank"
           >
-            Gemini API
+            Deepseek API
           </a>{" "}
           and{" "}
           <a
@@ -26,7 +26,7 @@ export default function Footer() {
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
         <Link
-          href="https://twitter.com/osanseviero"
+          href="https://x.com/chmilo"
           className="group"
           aria-label=""
           target="_blank"
@@ -39,7 +39,7 @@ export default function Footer() {
           </svg>
         </Link>
         <Link
-          href="https://github.com/osanseviero/geminicoder"
+          href="https://github.com/sing1ee/deepseekCoder"
           className="group"
           aria-label="TaxPal on GitHub"
           target="_blank"

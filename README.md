@@ -1,26 +1,26 @@
-<a href="https://www.geminicoder.io">
-  <img alt="Gemini Coder" src="./public/logo.svg">
-  <h1 align="center">Gemini Coder</h1>
+<a href="https://www.deepseek-coder.io">
+  <img alt="DeepSeek Coder" src="./public/favicon.svg">
+  <h1 align="center">DeepSeek Coder</h1>
 </a>
 
 <p align="center">
-  Generate small apps with one prompt. Powered by the Gemini API.
+  Generate small apps with one prompt. Powered by the DeepSeek API.
 </p>
 
-This project is fully based on [llamacoder](https://github.com/Nutlope/llamacoder). Please follow [Nutlope](https://github.com/Nutlope) and give them a star..
+This project is fully based on [llamacoder](https://github.com/Nutlope/llamacoder). Please follow [Nutlope](https://github.com/Nutlope) and give them a star.
 
 ## Tech stack
 
-- [Gemini API](https://ai.google.dev/gemini-api/docs) to use Gemini 1.5 Pro, Gemini 1.5 Flash, and Gemini 2.0 Flash Experimental
+- [DeepSeek API](https://platform.deepseek.com/docs) for code generation using DeepSeek-Coder models
 - [Sandpack](https://sandpack.codesandbox.io/) for the code sandbox
 - Next.js app router with Tailwind
 
-You can also experiment with Gemini in [Google AI Studio](https://aistudio.google.com/).
+You can also experiment with DeepSeek models on the [DeepSeek Platform](https://platform.deepseek.com/).
 
 ## Cloning & running
 
-1. Clone the repo: `git clone https://github.com/osanseviero/geminicoder`
-2. Create a `.env` file and add your [Google AI Studio API key](https://aistudio.google.com/app/apikey): `GOOGLE_AI_API_KEY=`
+1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/deepseek-coder`
+2. Create a `.env` file and add your [DeepSeek API key](https://platform.deepseek.com/api-keys): `DEEPSEEK_API_KEY=`
 3. Run `npm install` and `npm run dev` to install dependencies and run locally
 
-**This is a personal project and not a Google official project**
+**This is a personal project and not affiliated with DeepSeek**

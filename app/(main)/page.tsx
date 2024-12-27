@@ -22,16 +22,8 @@ export default function Home() {
   let [prompt, setPrompt] = useState("");
   let models = [
     {
-      label: "gemini-2.0-flash-exp",
-      value: "gemini-2.0-flash-exp",
-    },
-    {
-      label: "gemini-1.5-pro",
-      value: "gemini-1.5-pro",
-    },
-    {
-      label: "gemini-1.5-flash",
-      value: "gemini-1.5-flash",
+      label: "deepseek-chat",
+      value: "deepseek-chat",
     }
   ];
   let [model, setModel] = useState(models[0].value);
@@ -87,7 +79,9 @@ export default function Home() {
       if (done) {
         break;
       }
-      receivedData += new TextDecoder().decode(value);
+      
+      let decodedText = new TextDecoder().decode(value);
+      receivedData += decodedText;
       const cleanedData = removeCodeFormatting(receivedData);
       setGeneratedCode(cleanedData);
     }
@@ -109,11 +103,11 @@ export default function Home() {
     <main className="mt-12 flex w-full flex-1 flex-col items-center px-4 text-center sm:mt-1">
       <a
         className="mb-4 inline-flex h-7 shrink-0 items-center gap-[9px] rounded-[50px] border-[0.5px] border-solid border-[#E6E6E6] bg-[rgba(234,238,255,0.65)] bg-gray-100 px-7 py-5 shadow-[0px_1px_1px_0px_rgba(0,0,0,0.25)]"
-        href="https://ai.google.dev/gemini-api/docs"
+        href="https://api-docs.deepseek.com/"
         target="_blank"
       >
         <span className="text-center">
-          Powered by <span className="font-medium">Gemini API</span>
+          Powered by <span className="font-medium">Deepseek API</span>
         </span>
       </a>
       <h1 className="my-6 max-w-3xl text-4xl font-bold text-gray-800 sm:text-6xl">
